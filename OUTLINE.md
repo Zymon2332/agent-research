@@ -39,7 +39,8 @@ agent-research/
 │   ├── 02-context-engineering.md      # 上下文工程
 │   ├── 03-memory.md                   # 记忆体系
 │   ├── 04-tool-use-and-sandbox.md     # 工具调用与沙箱执行
-│   └── 05-multi-agent.md              # 多智能体协作
+│   ├── 05-multi-agent.md              # 多智能体协作
+│   └── 06-agent-architectures.md      # 六种架构方案与 Super-Agent
 │
 ├── 02-frameworks/                     # 卷 2：主流框架（一篇一框架）
 │   ├── 00-selection-matrix.md         # 选型矩阵与决策树
@@ -74,7 +75,8 @@ agent-research/
 │   ├── 01-coding-agents.md            # 编码 Agent
 │   ├── 02-computer-use.md             # 浏览器 / GUI Agent
 │   ├── 03-deep-research.md            # 深度研究 Agent
-│   └── 04-enterprise-platforms.md     # 企业平台与低代码
+│   ├── 04-enterprise-platforms.md     # 企业平台与低代码
+│   └── 05-vendor-agent-architectures.md  # 大厂参考架构
 │
 ├── 06-outlook/                        # 卷 6：展望
 │   └── 01-open-problems.md            # 开放问题、风险与趋势
@@ -139,6 +141,11 @@ agent-research/
 - 通信：消息、共享状态、文件、协议（A2A）。
 - 失败模式：错误放大、无限循环、责任稀释、成本爆炸。
 - 判断：什么时候多 agent 真的比单 agent + 好工具更强。
+
+**01/06-agent-architectures.md｜Agent 架构方案**
+- 五面解剖：控制 / 执行 / 记忆 / 治理 / 观测。
+- 六种方案：单体、路由、主管、层级、群体、流水线；三种判据。
+- Super-Agent：Router/Worker 双层、事件驱动、上下文隔离、与 supervisor 的区别、失败模式。
 
 ### 卷 2 · 主流框架（一篇一框架，统一 10 维对比）
 
@@ -303,6 +310,11 @@ agent-research/
 - 企业落地的真实约束：IT 审批、数据边界、身份集成、SLA。
 - "平台 vs 代码框架"的决策建议。
 
+**05/05-vendor-agent-architectures.md｜大厂参考架构**
+- 六家对照：Anthropic / OpenAI / Google / Microsoft / AWS / DeepSeek。
+- 三个共同点（harness 化、MCP、子 agent）与四个分歧。
+- 按处境选参考架构；锁定度看沙箱 / 记忆 / 身份三层。
+
 ### 卷 6 · 展望
 
 **06/01-open-problems.md**
@@ -341,8 +353,8 @@ sources: n
 | 档位 | 篇数 | 体量 | 说明 |
 |---|---|---|---|
 | A 精简 | ~18 | 3–4 万字 | 框架合并为 4 篇、工程化合并为 3 篇，只讲结论与对比 |
-| B 标准（推荐） | 36 | 8–10 万字 | 上述结构，每篇 150–300 行，框架一篇一框架 |
-| C 深度 | 36+ | 12 万字+ | 在 B 基础上加可运行代码示例、benchmark 复现记录、更多一手来源 |
+| B 标准（推荐） | 38 | 8–10 万字 | 上述结构，每篇 150–300 行，框架一篇一框架 |
+| C 深度 | 38+ | 12 万字+ | 在 B 基础上加可运行代码示例、benchmark 复现记录、更多一手来源 |
 
 **交付批次**（每批完成后可 review，不阻塞后续）：
 1. P0 骨架：README 骨架 + 模板 + 空目录 + 本大纲定稿

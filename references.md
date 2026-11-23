@@ -1,6 +1,6 @@
 # 参考来源汇总
 
-> 自动汇总自 36 篇的"参考来源"节，最后更新：2026-11-20。共 **300** 条去重来源。
+> 自动汇总自 38 篇的"参考来源"节，最后更新：2026-11-23。共 **306** 条去重来源。
 > 单篇完整书目见各篇末尾；此处用于跨篇检索与去重。同一链接被多篇引用时，"引用"列给出篇数。
 
 ## 被引用最多的来源
@@ -9,19 +9,19 @@
 |---|---|---|
 | [A2A Protocol Surpasses 150 Organizations...](https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year) | Linux Foundation | 7 |
 | [The 2026-07-28 Specification](https://blog.modelcontextprotocol.io/posts/2026-07-28/) | Model Context Protocol | 6 |
-| [Building effective AI agents](https://www.anthropic.com/engineering/building-effective-agents) | Anthropic | 4 |
+| [Building effective AI agents](https://www.anthropic.com/engineering/building-effective-agents) | Anthropic | 5 |
 | [Linux Foundation Announces the Formation of the Agentic AI Foundation](https://aaif.io/news/linux-foundation-announces-formation-of-aaif) | AAIF | 4 |
 | [Linux Foundation Announces the Formation of the Agentic AI Foundation (AAIF)](https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation) | Linux Foundation | 3 |
 | [The ACP Registry is Live](https://zed.dev/blog/acp-registry) | Zed | 3 |
 | [Writing effective tools for AI agents](https://www.anthropic.com/engineering/writing-tools-for-agents) | Anthropic | 3 |
 | [Beyond the Leaderboard: A Synthesis of Tool-Use, Planning, and Reasoning Failures in LLM Agents](https://arxiv.org/abs/2607.05775) | Albayaydh et al. | 3 |
 | [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) | Anthropic | 3 |
+| [How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) | Anthropic | 3 |
+| [Extend Claude Code（扩展层：CLAUDE.md / Skills / Subagents / Hooks / MCP）](https://code.claude.com/docs/en/features-overview) | Claude Code Docs | 3 |
+| [Agent Builder 弃用时间线（2026-11-30 关停，ChatKit 保留）](https://developers.openai.com/api/docs/deprecations) | OpenAI | 3 |
+| [A New Chapter for A2A: Joining the Agentic AI Foundation](https://a2a-protocol.org/latest/blog/2026/08/27/a-new-chapter-for-a2a-joining-the-agentic-ai-foundation/) | A2A Protocol | 3 |
 | [Why we no longer evaluate SWE-bench Verified（污染与测试缺陷分析，建议转向 SWE-bench Pro）](https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/) | OpenAI | 3 |
 | [Microsoft Agent Framework Harness and Hosted Agents Reach General Availability](https://www.infoq.com/news/2026/08/agent-framework-harness-ga/) | InfoQ | 2 |
-| [Introducing AgentKit（含 2026-06-03 停用说明）](https://openai.com/index/introducing-agentkit/) | OpenAI | 2 |
-| [Anthropic adopts OpenAI's standards: AGENTS.md](https://eu.36kr.com/en/p/3989811919076098) | 36Kr | 2 |
-| [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) | Yao et al. | 2 |
-| [Context Rot: How Increasing Input Tokens Impacts LLM Performance](https://www.trychroma.com/research/context-rot) | Chroma | 2 |
 
 ## 规范与治理（35 条）
 
@@ -30,8 +30,8 @@
 | [A2A Protocol Surpasses 150 Organizations...](https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year) | Linux Foundation · 2026-04 | 7 |
 | [The 2026-07-28 Specification](https://blog.modelcontextprotocol.io/posts/2026-07-28/) | Model Context Protocol · 2026-07 | 6 |
 | [Linux Foundation Announces the Formation of the Agentic AI Foundation](https://aaif.io/news/linux-foundation-announces-formation-of-aaif) | AAIF · 2025-12 | 4 |
+| [A New Chapter for A2A: Joining the Agentic AI Foundation](https://a2a-protocol.org/latest/blog/2026/08/27/a-new-chapter-for-a2a-joining-the-agentic-ai-foundation/) | A2A Protocol · 2026-08 | 3 |
 | [Linux Foundation Announces the Formation of the Agentic AI Foundation (AAIF)](https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation) | Linux Foundation · 2025-12 | 3 |
-| [A New Chapter for A2A: Joining the Agentic AI Foundation](https://a2a-protocol.org/latest/blog/2026/08/27/a-new-chapter-for-a2a-joining-the-agentic-ai-foundation/) | A2A Protocol · 2026-08 | 2 |
 | [A2A Protocol Ships v1.0](https://a2a-protocol.org/latest/blog/2026/03/12/a2a-protocol-ships-v10-production-ready-standard-for-agent-to-agent-communication/) | A2A Protocol Community · 2026-03 | 2 |
 | [A2A Protocol Specification（v1.0）](https://a2a-protocol.org/latest/specification/) | Linux Foundation · 2026 | 2 |
 | [ACP Architecture](https://agentclientprotocol.com/get-started/architecture) | Agent Client Protocol · 2026-11 | 2 |
@@ -63,18 +63,20 @@
 | [Transports (v1)](https://agentclientprotocol.com/protocol/v1/transports) | Agent Client Protocol · 2026-11 | 1 |
 | [Versioning and Compatibility](https://modelcontextprotocol.io/specification/2026-07-28/basic/versioning) | Model Context Protocol · 2026-07 | 1 |
 
-## 厂商文档与工程博客（88 条）
+## 厂商文档与工程博客（94 条）
 
 | 来源 | 机构 · 日期 | 引用篇数 |
 |---|---|---|
-| [Building effective AI agents](https://www.anthropic.com/engineering/building-effective-agents) | Anthropic · 2024-12 | 4 |
+| [Building effective AI agents](https://www.anthropic.com/engineering/building-effective-agents) | Anthropic · 2024-12 | 5 |
+| [Agent Builder 弃用时间线（2026-11-30 关停，ChatKit 保留）](https://developers.openai.com/api/docs/deprecations) | OpenAI · 2026-06-03 | 3 |
 | [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) | Anthropic · 2025-09 | 3 |
+| [How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) | Anthropic · 2025-06 | 3 |
 | [The ACP Registry is Live](https://zed.dev/blog/acp-registry) | Zed · 2026-01 | 3 |
 | [Writing effective tools for AI agents](https://www.anthropic.com/engineering/writing-tools-for-agents) | Anthropic · 2025 | 3 |
-| [Agent Builder 弃用时间线（2026-11-30 关停，ChatKit 保留）](https://developers.openai.com/api/docs/deprecations) | OpenAI · 2026-06-03 | 2 |
 | [Agent Pay for Machines（x402 付款凭证）](https://www.mastercard.com/mea/en/news-and-trends/press/2026/october/Mastercard-Agent-Pay-for-Machines-in-action.html) | Mastercard · 2026-10 | 2 |
 | [Amazon Bedrock AgentCore 概览（Runtime 支持最长 8 小时的长时工作负载与会话隔离）](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html) | AWS 文档 · 2026-11 | 2 |
 | [Anthropic adopts OpenAI's standards: AGENTS.md](https://eu.36kr.com/en/p/3989811919076098) | 36Kr · 2026-09 | 2 |
+| [Deep Research 技术说明（o3 + 浏览 + Python 的长时单 agent）](https://openai.com/index/introducing-deep-research/) | OpenAI · 2025-02 | 2 |
 | [Foundry Agent Service is GA（Entra Agent Identity / 私有网络 / evaluations）](https://devblogs.microsoft.com/foundry/foundry-agent-service-ga/) | Microsoft Foundry Blog · 2026-03 | 2 |
 | [Gemini Enterprise Agent Platform Pricing（2026 SKU 合并）](https://services.google.com/fh/files/emails/b_502770571_gemini_enterprise_agent_platform_pricing.pdf) | Google · 2026-06 | 2 |
 | [Interrupts：暂停、`Command(resume=)` 与节点重跑语义](https://docs.langchain.com/oss/python/langgraph/interrupts) | LangChain · 2026-11 | 2 |
@@ -85,6 +87,8 @@
 | [Microsoft Agent Framework 1.0 发布公告（2026-04-02 GA）](https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-version-1-0/) | Microsoft DevBlogs · 2026-04 | 2 |
 | [Microsoft Agent Framework Harness and Hosted Agents Reach General Availability](https://www.infoq.com/news/2026/08/agent-framework-harness-ga/) | InfoQ · 2026-08 | 2 |
 | [Microsoft Agent Framework 概览（含 Go 预览与 Harness Agent）](https://learn.microsoft.com/en-us/agent-framework/overview/) | Microsoft Learn · 2026-10-28 | 2 |
+| [Super-agent 设计探索：迈向更自主的 Agent 系统](https://finance.sina.com.cn/roll/2026-11-01/doc-inixeyiz3146996.shtml) | DeepSeek Harness 团队 · 2026-10-31 | 2 |
+| [The next evolution of the Agents SDK（2026-04-15：harness 与 sandbox 拆分、Sandbox agents beta）](https://openai.com/index/the-next-evolution-of-the-agents-sdk/) | OpenAI · 2026-04 | 2 |
 | [Agent Builder 文档（弃用通知、ChatKit 保留、导出 SDK 代码）](https://platform.openai.com/docs/guides/agent-builder) | OpenAI · 2026-11 | 1 |
 | [Agent Platform 价格（Deep Research token 与 grounding 计费）](https://cloud.google.com/model-garden/pricing?hl=zh-cn) | Google Cloud · 2026-11 | 1 |
 | [Agents（`FunctionAgent` 循环与工具、memory）](https://developers.llamaindex.ai/python/framework/module_guides/deploying/agents/) | developers.llamaindex.ai · 2026-11 | 1 |
@@ -93,8 +97,10 @@
 | [Agno 文档（Agents / Teams 四种模式 / Memory / Knowledge / AgentOS）](https://docs.agno.com/agents/overview) | Agno · 2026-11 | 1 |
 | [Aider conventions](https://aider.chat/docs/usage/conventions.html) | Aider · 2026-11 | 1 |
 | [Amazon Bedrock AgentCore 产品页（会话隔离、长时负载、身份与策略控制）](https://aws.amazon.com/bedrock/agentcore/) | AWS · 2026 | 1 |
+| [Amazon Bedrock AgentCore（Runtime / Memory / Gateway / Identity / Policy）](https://docs.aws.amazon.com/bedrock-agentcore/) | AWS · 2026 | 1 |
 | [AutoGen 迁移指南（默认行为差异、MCP 传输限制、分布式 runtime 现状）](https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-autogen/) | Microsoft Learn · 2026 | 1 |
 | [Bring Your Own Agent to Zed — Featuring Gemini CLI](https://zed.dev/blog/bring-your-own-agent-to-zed) | Zed · 2025-08 | 1 |
+| [Build multi-agent systems with ADK（层级 agent 树与转移）](https://codelabs.developers.google.com/codelabs/production-ready-ai-with-gc/3-developing-agents/build-a-multi-agent-system-with-adk) | Google · 2026 | 1 |
 | [Building with the Apps SDK](https://help.openai.com/en/articles/12515353-building-with-the-apps-sdk) | OpenAI Help Center · 2026-11 | 1 |
 | [CAMEL 文档（Introduction / Societies / RolePlaying 协议与 Workforce）](https://docs.camel-ai.org/key_modules/societies) | CAMEL-AI · 2026-11 | 1 |
 | [Claude Code Advanced Patterns（CLAUDE.md 与 hooks）](https://resources.anthropic.com/hubfs/Claude%20Code%20Advanced%20Patterns_%20Subagents,%20MCP,%20and%20Scaling%20to%20Real%20Codebases.pdf) | Anthropic · 2026-03 | 1 |
@@ -106,6 +112,7 @@
 | [Crews（Crew 与 Task 的组装方式）](https://docs.crewai.com/v1.15.44/en/concepts/crews) | docs.crewai.com v1.15.44 · 2026-11 | 1 |
 | [Deep Research preview（deep-research-preview-04-2026）](https://ai.google.dev/gemini-api/docs/models/deep-research-preview-04-2026) | Google AI for Developers · 2026-10 | 1 |
 | [Deep research in ChatGPT（用量、来源与连接应用）](https://help.openai.com/zh-hant/articles/10500283-deep-research-in-chatgpt) | OpenAI Help Center · 2026-10 | 1 |
+| [DeepSeek 发布全新 Agent 架构"Super-agent"（转载与解读）](https://m.163.com/dy/article/LAOBS1SB051481US.html) | 环球网 / 网易 · 2026-11 | 1 |
 | [Deploy to Bedrock AgentCore（per-session microVM、Identity 集成）](https://strandsagents.com/docs/user-guide/sdk/deploy/deploy_to_bedrock_agentcore/) | AWS · 2026-10-26 更新 | 1 |
 | [Evaluating（响应评估与检索评估指标）](https://developers.llamaindex.ai/python/framework/module_guides/evaluating/) | developers.llamaindex.ai · 2026-11 | 1 |
 | [Evolving Atlas into ChatGPT for browser-based agentic work（Atlas 于 2026-08-09 停用）](https://help.openai.com/en/articles/20001371-evolving-atlas-into-chatgpt-for-browser-based-agentic-work) | OpenAI Help Center · 2026-11 | 1 |
@@ -117,7 +124,6 @@
 | [Google shuts down Project Mariner（2026-05-04 关停）](https://www.theverge.com/tech/925559/google-project-mariner-shut-down) | The Verge · 2026-05 | 1 |
 | [Google's Computer Use Goes GA; Client Apps Still Execute the Actions](https://tech.yahoo.com/ai/gemini/articles/google-computer-goes-ga-client-155736236.html) | Yahoo Tech · 2026-10 | 1 |
 | [How to use ChatGPT Work now that ChatGPT agent is unavailable](https://dataconomy.com/2026/11/09/chatgpt-work-agent-alternative-multi-step-tasks/) | Dataconomy · 2026-11 | 1 |
-| [How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) | Anthropic · 2025-06 | 1 |
 | [Introducing Gemini Enterprise Agent Platform](https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform) | Google Cloud Blog · 2026-04 | 1 |
 | [Introducing deep research（2026-02-10 更新：MCP/应用与可信站点）](https://openai.com/ka-GE/index/introducing-deep-research/) | OpenAI · 2026-02 | 1 |
 | [LangGraph 1.0 发布与 `create_react_agent` 弃用说明](https://www.langchain.com/blog/langchain-langgraph-1dot) | LangChain · 2025-10 | 1 |
@@ -130,6 +136,7 @@
 | [Mastra 文档（Agents、Workflows、Evals、Memory、部署）](https://mastra.ai/docs/agents/overview) | Mastra · 2026-11 | 1 |
 | [Memory Blocks (core memory)](https://docs.letta.com/v1-sdk/memory/memory-blocks) | Letta · 2026 | 1 |
 | [Memory（统一记忆、scope 树、composite 评分）](https://docs.crewai.com/v1.15.44/en/concepts/memory) | docs.crewai.com v1.15.44 · 2026-11 | 1 |
+| [Microsoft Agent Framework at BUILD 2026（Agent Harness / Hosted Agents）](https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-at-build-2026-announce/) | Microsoft DevBlogs · 2026-06 | 1 |
 | [Multi-Agent Patterns 决策指南（agents-as-tools / workflow / Graph / Swarm 对比与选型）](https://strandsagents.com/docs/user-guide/sdk/multi-agent/multi-agent-patterns/) | AWS · 2026-11-13 更新 | 1 |
 | [OpenAI 联合创办 Agentic AI Foundation 并捐赠 AGENTS.md](https://openai.com/index/agentic-ai-foundation/) | OpenAI · 2025-12 | 1 |
 | [Plan-and-Execute Agents](https://www.langchain.com/blog/planning-agents) | LangChain · 2024-02 | 1 |
@@ -142,7 +149,6 @@
 | [Session Management 文档（快照式与仓库式、Local/S3 存储）](https://strandsagents.com/docs/user-guide/sdk/agents/session-management/) | AWS · 2026-11-18 更新 | 1 |
 | [Strands Agents 1.0 发布说明（多 agent 原语、A2A 支持、session 抽象）](https://strandsagents.com/blog/strands-agents-1-0/) | AWS Open Source Blog · 2025-07 | 1 |
 | [Strands Agents 官方文档（Agent、tools、multi-agent patterns、session management、A2A、AgentCore 部署）](https://strandsagents.com/docs/user-guide/sdk/) | AWS · 2026-11 | 1 |
-| [The next evolution of the Agents SDK（2026-04-15：harness 与 sandbox 拆分、Sandbox agents beta）](https://openai.com/index/the-next-evolution-of-the-agents-sdk/) | OpenAI · 2026-04 | 1 |
 | [Time travel：replay 与 fork 的差异](https://docs.langchain.com/oss/python/langgraph/use-time-travel) | LangChain · 2026-11 | 1 |
 | [Use computer use tools to automate GUI tasks with Amazon Bedrock models](https://docs.aws.amazon.com/bedrock/latest/userguide/computer-use.html) | AWS · 2026-11 | 1 |
 | [Versioning and Support（SemVer 2.0.0、experimental 不受保护、pin minor 建议）](https://strandsagents.com/docs/user-guide/sdk/versioning-and-support/) | AWS · 2026-10-22 更新 | 1 |
@@ -164,6 +170,7 @@
 | [Indirect Prompt Injection in Browser-Using Agents](https://zenodo.org/records/21216301) | Zenodo · 2026-07 | 2 |
 | [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) | Yao et al. · 2022-10 | 2 |
 | [WebArena Verified（ICLR 2026）](https://openreview.net/pdf?id=94tlGxmqkN) | ServiceNow · 2026 | 2 |
+| [Why Do Multi-Agent LLM Systems Fail?](https://arxiv.org/abs/2503.13657) | Cemri et al. · 2025-03（v3 2025-10） | 2 |
 | [深度研究 harness 的贡献（+17.81 RACE）](https://aclanthology.org/2026.acl-long.288.pdf) | ACL 2026 · 2026 | 2 |
 | [30 CVEs in 60 Days: The Model Context Protocol Attack Surface（30 余个 MCP CVE、43% 注入类、CVE-2025-6514）](https://zenodo.org/records/19476420) | Zenodo · 2026 | 1 |
 | [Capable language models can outgrow the benefits of collaboration](https://doi.org/10.1038/s42256-026-01268-y) | Kim et al. | 1 |
@@ -187,7 +194,6 @@
 | [WebArena: A Realistic Web Environment for Building Autonomous Agents](https://arxiv.org/abs/2307.13854) | CMU 等 · 2023-07 | 1 |
 | [WebVoyager: Building an End-to-End Web Agent with Large Multimodal Models](https://arxiv.org/abs/2401.13919) | arXiv 论文 · 2024-01 | 1 |
 | [When Evaluators of AI Agents Disagree: Native Scoring, LLM Judges, and Commit-Boundary Checks on tau2-bench](https://arxiv.org/abs/2611.14581) | arXiv · 2026-11 | 1 |
-| [Why Do Multi-Agent LLM Systems Fail?](https://arxiv.org/abs/2503.13657) | Cemri et al. · 2025-03（v3 2025-10） | 1 |
 | [τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains（含 pass^k 定义与 GPT-4o 数据）](https://arxiv.org/abs/2406.12045) | Sierra · 2024-06 | 1 |
 | [论文《Executable Code Actions Elicit Better LLM Agents》（代码动作的步数与效果证据）](https://arxiv.org/abs/2402.01030) | arXiv 2402.01030 | 1 |
 
@@ -263,8 +269,10 @@
 
 | 来源 | 机构 · 日期 | 引用篇数 |
 |---|---|---|
+| [Extend Claude Code（扩展层：CLAUDE.md / Skills / Subagents / Hooks / MCP）](https://code.claude.com/docs/en/features-overview) | Claude Code Docs · 2026-11 | 3 |
 | [Agent security considerations for WebMCP](https://developer.chrome.com/docs/agents/security) | Chrome for Developers · 2026-06 | 2 |
 | [Context Rot: How Increasing Input Tokens Impacts LLM Performance](https://www.trychroma.com/research/context-rot) | Chroma · 2025-07 | 2 |
+| [Don't Build Multi-Agents](https://cognition.ai/blog/dont-build-multi-agents) | Cognition · 2025-06 | 2 |
 | [OpenAI Agents SDK 文档首页（原语、Sandbox agents、Sessions）](https://openai.github.io/openai-agents-python/) | OpenAI · 2026-11 | 2 |
 | [Tool search tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-search-tool) | Anthropic · 2026 | 2 |
 | [$τ^2$-Bench: Evaluating Conversational Agents in a Dual-Control Environment](https://proceedings.mlr.press/v306/barres26a.html) | ICML 2026 / PMLR 306 · 2026-09 | 1 |
@@ -296,11 +304,9 @@
 | [DeepResearch Bench（ICLR 2026，RACE 与 FACT）](https://mlanthology.org/iclr/2026/du2026iclr-deepresearch/) | Du et al. · 2026 | 1 |
 | [Dify License（修改版 Apache 2.0 与多租户条款）](https://scancode-licensedb.aboutcode.org/dify-exception-apache-2.0.html) | ScanCode LicenseDB · 2026-11 | 1 |
 | [Dify v3.13.0 LTS 发布说明](https://ee.dify.ai/releases/v3.13.0/) | Dify · 2026-09 | 1 |
-| [Don't Build Multi-Agents](https://cognition.ai/blog/dont-build-multi-agents) | Cognition · 2025-06 | 1 |
 | [Durable Sessions（Virtual Object + K/V 状态实现会话恢复）](https://docs.restate.dev/ai/patterns/sessions) | Restate 文档 · 2026-11 | 1 |
 | [Durable agent with tools using the OpenAI Agents SDK](https://docs.temporal.io/ai/cookbook/openai-agents-sdk-python) | Temporal 文档 · 2026-11 | 1 |
 | [EchoLeak 与 CVE-2025-32711（CVSS 9.3、微软未发现实际利用）综述](https://safeguard.sh/resources/blog/echoleak-zero-click-prompt-injection-copilot) | Safeguard · 2026-09 | 1 |
-| [Extend Claude Code（hooks / skills / subagents / workflows）](https://code.claude.com/docs/en/features-overview) | Anthropic · 2026-11 | 1 |
 | [Fable 5.1 in Devin（Fusion harness 与 ACU 计费）](https://devin.ai/blog/fable-5-1) | Cognition · 2026-08 | 1 |
 | [Firecracker: Secure and fast microVMs for serverless computing](https://firecracker-microvm.github.io/) | AWS · 2026 | 1 |
 | [From AGENT.md to AGENTS.md](https://ampcode.com/news/AGENTS.md) | Amp · 2025-08 | 1 |

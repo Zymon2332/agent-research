@@ -1,6 +1,6 @@
 # 主流 Agent 技术体系（2026-11 基线）
 
-面向技术选型与架构评审的结构化文档集：**36 篇，一篇一主题**，按"总览 → 基础 → 框架 → 协议 → 工程化 → 产品 → 展望"分层组织。每篇自带结论、对比表、踩坑与来源，可独立阅读。
+面向技术选型与架构评审的结构化文档集：**38 篇，一篇一主题**，按"总览 → 基础 → 框架 → 协议 → 工程化 → 产品 → 展望"分层组织。每篇自带结论、对比表、踩坑与来源，可独立阅读。
 
 - 时间基线：**2026-11-20**。所有版本号与规范状态标注核实日期，生态变化快，引用前请先看篇内的"基线"。
 - 写作规范：[STYLE.md](STYLE.md)；目录契约：[OUTLINE.md](OUTLINE.md)。
@@ -34,6 +34,7 @@
 | [03-memory](01-foundations/03-memory.md) | 记忆分类、实现谱系与写入策略 | 已完稿 |
 | [04-tool-use-and-sandbox](01-foundations/04-tool-use-and-sandbox.md) | 工具 schema 与沙箱执行 | 已完稿 |
 | [05-multi-agent](01-foundations/05-multi-agent.md) | 多智能体拓扑与失败模式 | 已完稿 |
+| [06-agent-architectures](01-foundations/06-agent-architectures.md) | 六种架构方案与 Super-Agent 解剖 | 已完稿 |
 
 ### 卷 2 · 主流框架
 
@@ -81,6 +82,7 @@
 | [02-computer-use](05-products/02-computer-use.md) | 浏览器 / GUI Agent | 已完稿 |
 | [03-deep-research](05-products/03-deep-research.md) | 深度研究 Agent | 已完稿 |
 | [04-enterprise-platforms](05-products/04-enterprise-platforms.md) | 企业平台与低代码 | 已完稿 |
+| [05-vendor-agent-architectures](05-products/05-vendor-agent-architectures.md) | 六家大厂参考架构对照 | 已完稿 |
 
 ### 卷 6 · 展望
 
@@ -100,3 +102,4 @@
 
 - 2026-11-20：初始化目录、规范与模板，开始按批次写作。
 - 2026-11-20：36 篇全部完稿，共约 7,700 行；汇总去重来源 300 条，跨篇审校完成。
+- 2026-11-23：补《Agent 架构方案》与《大厂 Agent 参考架构》两篇，共 38 篇。
