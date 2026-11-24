@@ -12,6 +12,26 @@ LangGraph 是"带 checkpoint 的确定性编排运行时"，不是多 agent 框�
 
 > 判断：LangGraph 的真正价值不在"图"，而在 checkpoint 带来的可恢复性；一旦接受这一点，很多"要不要用图"的争论会变成"要不要可恢复"，答案清楚得多。
 
+## 先看一个退款流程
+
+电商售后：客服在工单里提交退款，系统校验订单、风控扫一遍，再等人工审批——审批人可能三天后才看。难点不在"判得准不准"，而在三件事：进程不能挂着等三天；重启后要从"等审批"接着走，且不能重复打款；审批人改了金额还要能重跑。这条流程在 LangGraph 里被拆成四个阶段，每个阶段落到一个对象上：
+
+| 业务步骤 | 图里的对象 | 谁负责 |
+|---|---|---|
+| 申请与订单号 | `State` + `thread_id` | 调用方 |
+| 校验、风控 | 两个 node，读状态、返回增量 | 你写的函数 |
+| 等审批三天 | `interrupt()`，落盘后进程可退出 | checkpointer |
+| 审批后继续、改金额重跑 | `Command(resume=...)` / 在历史 checkpoint 上 fork | 调用方 |
+
+**StateGraph** 是一张写死的流程图：节点是函数，边是"下一步去哪"。类比地铁线路图——模型只在站内做判断，站序由你定。**checkpointer** 是每个超步给整份状态拍的照片，按 `thread_id` 归档；`interrupt()` 相当于"存档退出"，三天后 `Command(resume=...)` 从这张存档继续。恢复时被中断的节点会从头重跑，所以打款不能放在审批节点里。
+
+```python
+graph = StateGraph(State).compile(checkpointer=PostgresSaver.from_conn_string(DSN))
+graph.invoke({"order": "A-42"}, {"configurable": {"thread_id": "refund-A-42"}})
+```
+
+理解了"图其实是为存档服务的"，再看定位与谱系就顺了。
+
 ## 定位与谱系
 
 - **出品方 / 首次发布 / 当前版本**：LangChain Inc.；2024 年开源，2025-10 发布 1.0（与 LangChain 1.0 同日）；截至 2026-11-20，PyPI `langgraph` 为 **1.2.24**，npm `@langchain/langgraph` 为 **1.7.5**。

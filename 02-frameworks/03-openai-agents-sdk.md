@@ -12,6 +12,26 @@ OpenAI Agents SDK 是五个原语（agent、handoff、guardrail、session、trac
 
 > 判断：它的竞争力来自"默认路径足够好"——默认模型、默认循环、默认 tracing 三件套让两周内能上线；代价是这套默认值同时是锁定点，换模型或换可观测后端都要额外做功。
 
+## 先看一个分诊入口
+
+假设客服系统只留一个入口：用户说"上周那单还没到，顺便把会员退了"，一句话里有两个意图。如果只做一个大 agent，把退款、物流两套工具和两份 instructions 全塞进去，工具一多模型就选错，指令之间还会互相打架；自己写 if/else 分流，又退回了硬编码规则。SDK 的做法是"入口只分诊，专才各管一段"：
+
+| 环节 | SDK 里的对象 | 谁来决定 |
+|---|---|---|
+| 接话、判断意图 | `triage` agent 的 instructions | 模型 |
+| 把会话交给退款 / 物流 | `handoff`（在工具列表里就是一个特殊工具） | 模型调用它 |
+| 专才干活 | 目标 agent 自己的 `tools` | 目标 agent |
+| 历史与轮次上限 | `session` / `max_turns` | Runner 自动处理 / 你设 |
+
+**handoff 不是"调用一个子函数"**，而是把当前这段对话连同历史交给另一个 agent，从此由它接着说。类比医院分诊台：护士不自己看病，而是把你和病历一起交给对应科室；交接后，护士那套挂号工具也不再可用。**Runner** 才是唯一在跑循环的东西，`Agent` 只是配置容器——像发动机与方向盘的关系。
+
+```python
+triage = Agent(name="triage", instructions="先分诊", handoffs=[handoff(refund_agent), handoff(logistics_agent)])
+Runner.run_sync(triage, "上周那单还没到，顺便退会员", max_turns=8)
+```
+
+注意 handoff 默认连历史一起带过去，上一个 agent 的指令也会跟过去——这正是后面"常见坑"的第一条。带着"没有步骤、只有循环"这个前提往下读，十维对比会更容易看出它的边界。
+
 ## 定位与谱系
 
 - **出品方 / 首次发布**：OpenAI；2025-03 开源，官方称其为此前实验项目 Swarm 的 "production-ready upgrade"。

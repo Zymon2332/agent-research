@@ -10,6 +10,27 @@ sources: 11
 
 ACP 把"编辑器 UI"和"agent 进程"拆成 JSON-RPC over stdio 的两端，让 agent 一次实现、所有客户端可用；2026-01 上线的 Registry 补上了分发这一环，这才是它从"Zed 的功能"变成"生态位"的转折点。
 
+## 先看一次会话：从打开到批准一次写入
+
+你在 Zed 里打开一个 Claude Code 会话，输入：**"把请求超时改成 30 秒，顺手补个测试。"** 这句话在 ACP 里是这样跑完的：
+
+| 步 | 方向 | 方法 | 发生了什么 |
+|---|---|---|---|
+| 1 | client → agent | `initialize` | 拉起 agent 子进程，协商版本并交换双方能力 |
+| 2 | client → agent | `session/new` | 传 `cwd` 与 `mcpServers`，拿到 `sessionId` |
+| 3 | client → agent | `session/prompt` | 你这句话进入 agent，回合开始 |
+| 4 | agent → client | `session/update` | 流式推消息分片、工具调用与计划，UI 边跑边显示 |
+| 5 | agent → client | `session/request_permission` → `fs/write_text_file` | 弹 diff 等你批准；批准后**由编辑器**写文件 |
+| 6 | agent → client | `terminal/create` → 回合结束 | 由编辑器跑测试，回合以 `stopReason` 收尾 |
+
+有两处细节值得先记住：**文件与终端是 client 提供的服务**，agent 只是请求方；权限请求则是建议性的——用户点拒绝之后是否真的停下，取决于 agent 的实现，编辑器并不替它做沙箱。
+
+**session**：人话是"一段带工作区边界的对话"。类比：同一栋楼里借会议室，会议号是连接，房间与门禁卡是 `cwd` 与 `mcpServers`。例子：第 2 步之后你在同一条连接上再开一个会话，两者 `sessionId` 不同、工作目录可以不同，互不串味。
+
+**permission request**：人话是"agent 说'我要动手了，你点头吗'"。类比：装修师傅进门先问"这面墙能砸吗"，砸墙的动作仍由他做，你只能事前表态。例子：第 5 步弹出的那个 diff 就是点头点；它拦住的是"用户不知情"，拦不住"agent 绕过编辑器直接调系统 API"。
+
+下面把这条链路上的对象、方法与信任模型拆开看。
+
 ## 问题与边界
 
 - **解决什么**：消除"每个编辑器 × 每个 agent"的定制集成。agent 只需实现一次协议，就能被任何 ACP 客户端（IDE、终端、笔记本）拉起；编辑器只需实现一次客户端，就获得整个 agent 生态。思路与 Language Server Protocol 同源。

@@ -10,6 +10,26 @@ sources: 12
 
 ADK 是 Google 官方维护的代码优先 agent 套件：抽象层次高于 LangGraph 的节点—边原语，又不像 CrewAI 那样用角色叙事把流程包起来；2.0 起把 agent、tool、普通函数统一成工作流图上的节点。它适合已经确定在 Gemini / Google Cloud 上跑生产 agent、并且愿意接受官方 runtime 与部署链路的团队；不适合要求多云同构、或要把 runtime 完全自建的场景。
 
+## 先看一次订票
+
+假设你给出行 App 做一个订票入口，用户说"下周三去杭州，先看天气，合适就订高铁票"。这里面有两件互不依赖的查证（天气、车次）、一次依赖两者的判断、一次必须用户确认金额的订票。全交给一个 agent 让它自己排顺序，它可能先订票再查天气；全写成代码，又处理不了"天气不好就改期"这种判断。ADK 的做法是把确定的部分写成图或预置组合，把判断留给模型：
+
+| 步骤 | ADK 里的对象 | 说明 |
+|---|---|---|
+| 并行查天气、查车次 | `ParallelAgent` 或图上的并行分支 | 两件事互不依赖 |
+| 汇总后判断去不去 | `LlmAgent` | 模型读两份结果 |
+| 订票前确认金额 | 工具审批（tool confirmation） | 不确认不执行 |
+| 整体顺序与会话状态 | `SequentialAgent` / `Workflow` 的 `edges`；`Session`/`State` | 谁先谁后写在结构里 |
+
+**workflow agent** 是几块预置积木：`SequentialAgent` 顺序跑子 agent，`ParallelAgent` 并行跑再汇总，`LoopAgent` 循环到条件满足。类比：不是让一个全能员工自己安排，而是给班组一张工序卡——两个人分头查，一个人汇总，签字后才下单。层级树则是它的组织方式：父 agent 通过 `sub_agents` 把任务委派下去，子 agent 只看得到父给的那部分上下文，像部门树而不是全员群聊。
+
+```python
+# 2.0 里 agent 只是图上的节点，顺序写在 edges 而不是 prompt 里
+root_agent = Workflow(name="trip", edges=[("START", weather, trains, decide, booker)])
+```
+
+记住"agent 只是节点"这一点，后面看 ADK 2.0 为什么废掉 `_run_async_impl` 重写就顺了。
+
 ## 定位与谱系
 
 - 出品方与许可：Google，仓库 `google/adk-python`，Apache-2.0（GitHub 仓库元数据，2026-11-20 核对）。

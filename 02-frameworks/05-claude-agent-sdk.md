@@ -10,6 +10,26 @@ sources: 11
 
 Claude Agent SDK 不是编排库，而是把 Claude Code 的整套 harness 以库的形式交付：agent loop、内置工具、权限系统、子 agent、hooks、skills、MCP 全部打包，进程内起一个 Claude Code 二进制来跑。适合"要一个能干活的编码/操作型 agent，而不是自己拼装 agent 骨架"的团队；不适合需要跨模型、或要把控制流精确握在手里的编排场景。
 
+## 先看一次改代码
+
+假设你让 agent 在仓库里修一个失败的测试，规则只有一条：**删文件之前必须问人**。它要自己读代码、改实现、跑测试；可能想 `rm` 掉一个旧 fixture，也可能想装依赖。卡点不在"会不会改"，而在三件事：危险动作要拦住、每次工具调用要留审计、跑长了上下文要能压缩续接。SDK 把这些做成了一套现成的工作台：
+
+| 环节 | SDK 里的对象 | 说明 |
+|---|---|---|
+| 收任务、跑循环 | `query()` / `ClaudeSDKClient` | 一次性调用 vs 长连接多轮 |
+| 读文件、改代码、跑测试 | 内置 `Read` / `Edit` / `Bash` / `Grep` | 不用自己写工具 schema |
+| 删文件前问人 | 权限模式 + `canUseTool` 回调 | 不在白名单的工具才会走到回调 |
+| 审计与上下文存档 | Hooks（如 `PreToolUse`）、`PreCompact` | hook 对所有调用都跑 |
+
+**harness** 不是"一个 agent 框架"，而是一套已经装好的工作台：循环、工具、权限、压缩、子 agent 都在里面，你拿到的是成品，不是空 loop。类比：不是给你零件造车，而是给你一辆能开的车，你能改的是"谁能上车、走哪条路、在哪设检查站"。
+
+```python
+opts = ClaudeAgentOptions(allowed_tools=["Read", "Grep", "Edit"],  # Bash 不在白名单
+                          permission_mode="acceptEdits")           # 删文件仍会问你
+```
+
+控制点固定是它的代价，也是它的边界：后面的执行模型一节会说明，这套 harness 能改的是权限与钩子，改不了循环本身。
+
 ## 定位与谱系
 
 - 出品方与许可：Anthropic。代码仓库 `anthropics/claude-agent-sdk-python` 为 MIT；但官方文档明确，使用受 Anthropic Commercial Terms 约束，包括用它给自己的客户提供产品（Agent SDK overview）。

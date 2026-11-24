@@ -12,6 +12,26 @@ Microsoft Agent Framework（下称 MAF）是 AutoGen 的 agent 抽象与 Semanti
 
 > 判断：MAF 的壁垒不在编排能力，而在"企业件 + .NET + 合规链路"的组合；离开 Azure 这个组合价值会掉一半，剩下的部分与 LangGraph 高度重叠。
 
+## 先看一次迁移
+
+假设一家保险公司的 .NET 团队要把 AutoGen 的群聊 demo 搬进生产：demo 里核保、条款、合规三个 agent 在群里轮流发言，讨论出结论，很好看；生产的要求却是另一套——调用要带 Entra 身份，trace 要进公司自己的 OTel，合规签字要留痕，进程要能被托管。卡点很具体：AutoGen 的 `Team` 没有内置 checkpoint，群聊轮次靠终止条件兜，身份与观测都得自己接。MAF 的覆盖方式并不整齐：身份与托管走 Foundry/Entra，其余缺口有现成原语。
+
+| demo 里的东西 | 上生产缺什么 | MAF 里对应什么 |
+|---|---|---|
+| 三个 agent 群聊 | 谁先发言、几轮停、结论怎么落 | `Workflow` + Group Chat / Magentic 模板与计数器 |
+| 历史只在内存 | 重启后接着聊 | `AgentSession` + workflow checkpoint |
+| 没有审批 | 合规要人工签字 | `ctx.request_info()` 或工具审批 |
+| 没有 trace | 出事故查不到 | 内置 OpenTelemetry |
+
+它之所以是"合并"而不是新框架：AutoGen 给的是 agent 之间的对话，Semantic Kernel 给的是企业件（会话、类型、middleware、遥测、模型接入）。**`Agent`** 管一次任务里的"模型-工具循环"，像会自己查资料写方案的员工；**`Workflow`** 管多个 executor 之间的数据流，像贴在墙上的工序卡——谁把结果交给谁写在卡上，不靠员工互相喊话。
+
+```python
+agent = Agent(client=client, name="underwriter", instructions="给出核保结论")
+wf = WorkflowBuilder(start_executor=draft, checkpoint_storage=store).add_edge(draft, approve).build()
+```
+
+先记住这两条轨的分工，再看它继承自 AutoGen / Semantic Kernel 的东西——那也是迁移时最容易踩坑的地方。
+
 ## 定位与谱系
 
 - **出品方 / 关键时间点**：Microsoft；2025-10 公布，2026-02 进入 RC，**2026-04-02 发布 1.0**（.NET 与 Python 同日），官方定位是"production-ready、稳定 API、长期支持"。
