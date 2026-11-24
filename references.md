@@ -1,34 +1,34 @@
 # 参考来源汇总
 
-> 自动汇总自 38 篇的"参考来源"节，最后更新：2026-11-23。共 **306** 条去重来源。
+> 自动汇总自 41 篇的"参考来源"节，最后更新：2026-11-24。共 **311** 条去重来源。
 > 单篇完整书目见各篇末尾；此处用于跨篇检索与去重。同一链接被多篇引用时，"引用"列给出篇数。
 
 ## 被引用最多的来源
 
 | 来源 | 机构 | 引用篇数 |
 |---|---|---|
-| [A2A Protocol Surpasses 150 Organizations...](https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year) | Linux Foundation | 7 |
-| [The 2026-07-28 Specification](https://blog.modelcontextprotocol.io/posts/2026-07-28/) | Model Context Protocol | 6 |
-| [Building effective AI agents](https://www.anthropic.com/engineering/building-effective-agents) | Anthropic | 5 |
+| [A2A Protocol Surpasses 150 Organizations...](https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year) | Linux Foundation | 8 |
+| [The 2026-07-28 Specification](https://blog.modelcontextprotocol.io/posts/2026-07-28/) | Model Context Protocol | 7 |
+| [Building effective AI agents](https://www.anthropic.com/engineering/building-effective-agents) | Anthropic | 6 |
+| [Why we no longer evaluate SWE-bench Verified](https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/) | OpenAI | 4 |
+| [How we built our multi-agent research system（90.2% 与 15 倍 token）](https://www.anthropic.com/engineering/multi-agent-research-system) | Anthropic | 4 |
+| [Super-agent 设计探索（人的注意力上限 3–5 个会话）](https://finance.sina.com.cn/roll/2026-11-01/doc-inixeyiz3146996.shtml) | DeepSeek Harness 团队 | 4 |
 | [Linux Foundation Announces the Formation of the Agentic AI Foundation](https://aaif.io/news/linux-foundation-announces-formation-of-aaif) | AAIF | 4 |
 | [Linux Foundation Announces the Formation of the Agentic AI Foundation (AAIF)](https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation) | Linux Foundation | 3 |
 | [The ACP Registry is Live](https://zed.dev/blog/acp-registry) | Zed | 3 |
+| [METR Time Horizon 1.1（50% 与 80% 任务时长）](https://opendatascience.com/ai-agent-task-horizon-workforce-planning/) | Open Data Science | 3 |
+| [Gemini Enterprise Agent Platform Pricing（vCPU](https://services.google.com/fh/files/emails/b_502770571_gemini_enterprise_agent_platform_pricing.pdf) | hr / GiB | 3 |
 | [Writing effective tools for AI agents](https://www.anthropic.com/engineering/writing-tools-for-agents) | Anthropic | 3 |
 | [Beyond the Leaderboard: A Synthesis of Tool-Use, Planning, and Reasoning Failures in LLM Agents](https://arxiv.org/abs/2607.05775) | Albayaydh et al. | 3 |
 | [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) | Anthropic | 3 |
-| [How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) | Anthropic | 3 |
-| [Extend Claude Code（扩展层：CLAUDE.md / Skills / Subagents / Hooks / MCP）](https://code.claude.com/docs/en/features-overview) | Claude Code Docs | 3 |
-| [Agent Builder 弃用时间线（2026-11-30 关停，ChatKit 保留）](https://developers.openai.com/api/docs/deprecations) | OpenAI | 3 |
-| [A New Chapter for A2A: Joining the Agentic AI Foundation](https://a2a-protocol.org/latest/blog/2026/08/27/a-new-chapter-for-a2a-joining-the-agentic-ai-foundation/) | A2A Protocol | 3 |
-| [Why we no longer evaluate SWE-bench Verified（污染与测试缺陷分析，建议转向 SWE-bench Pro）](https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/) | OpenAI | 3 |
-| [Microsoft Agent Framework Harness and Hosted Agents Reach General Availability](https://www.infoq.com/news/2026/08/agent-framework-harness-ga/) | InfoQ | 2 |
+| [Context Rot: How Increasing Input Tokens Impacts LLM Performance](https://www.trychroma.com/research/context-rot) | Chroma | 3 |
 
 ## 规范与治理（35 条）
 
 | 来源 | 机构 · 日期 | 引用篇数 |
 |---|---|---|
-| [A2A Protocol Surpasses 150 Organizations...](https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year) | Linux Foundation · 2026-04 | 7 |
-| [The 2026-07-28 Specification](https://blog.modelcontextprotocol.io/posts/2026-07-28/) | Model Context Protocol · 2026-07 | 6 |
+| [A2A Protocol Surpasses 150 Organizations...](https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year) | Linux Foundation · 2026-04 | 8 |
+| [The 2026-07-28 Specification](https://blog.modelcontextprotocol.io/posts/2026-07-28/) | Model Context Protocol · 2026-07 | 7 |
 | [Linux Foundation Announces the Formation of the Agentic AI Foundation](https://aaif.io/news/linux-foundation-announces-formation-of-aaif) | AAIF · 2025-12 | 4 |
 | [A New Chapter for A2A: Joining the Agentic AI Foundation](https://a2a-protocol.org/latest/blog/2026/08/27/a-new-chapter-for-a2a-joining-the-agentic-ai-foundation/) | A2A Protocol · 2026-08 | 3 |
 | [Linux Foundation Announces the Formation of the Agentic AI Foundation (AAIF)](https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation) | Linux Foundation · 2025-12 | 3 |
@@ -63,14 +63,17 @@
 | [Transports (v1)](https://agentclientprotocol.com/protocol/v1/transports) | Agent Client Protocol · 2026-11 | 1 |
 | [Versioning and Compatibility](https://modelcontextprotocol.io/specification/2026-07-28/basic/versioning) | Model Context Protocol · 2026-07 | 1 |
 
-## 厂商文档与工程博客（94 条）
+## 厂商文档与工程博客（97 条）
 
 | 来源 | 机构 · 日期 | 引用篇数 |
 |---|---|---|
-| [Building effective AI agents](https://www.anthropic.com/engineering/building-effective-agents) | Anthropic · 2024-12 | 5 |
+| [Building effective AI agents](https://www.anthropic.com/engineering/building-effective-agents) | Anthropic · 2024-12 | 6 |
+| [How we built our multi-agent research system（90.2% 与 15 倍 token）](https://www.anthropic.com/engineering/multi-agent-research-system) | Anthropic · 2025-06 | 4 |
+| [Super-agent 设计探索（人的注意力上限 3–5 个会话）](https://finance.sina.com.cn/roll/2026-11-01/doc-inixeyiz3146996.shtml) | DeepSeek Harness 团队 · 2026-10-31 | 4 |
 | [Agent Builder 弃用时间线（2026-11-30 关停，ChatKit 保留）](https://developers.openai.com/api/docs/deprecations) | OpenAI · 2026-06-03 | 3 |
 | [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) | Anthropic · 2025-09 | 3 |
-| [How we built our multi-agent research system](https://www.anthropic.com/engineering/multi-agent-research-system) | Anthropic · 2025-06 | 3 |
+| [Gemini Enterprise Agent Platform Pricing（vCPU](https://services.google.com/fh/files/emails/b_502770571_gemini_enterprise_agent_platform_pricing.pdf) | hr / GiB | 3 |
+| [METR Time Horizon 1.1（50% 与 80% 任务时长）](https://opendatascience.com/ai-agent-task-horizon-workforce-planning/) | Open Data Science · 2026-10 | 3 |
 | [The ACP Registry is Live](https://zed.dev/blog/acp-registry) | Zed · 2026-01 | 3 |
 | [Writing effective tools for AI agents](https://www.anthropic.com/engineering/writing-tools-for-agents) | Anthropic · 2025 | 3 |
 | [Agent Pay for Machines（x402 付款凭证）](https://www.mastercard.com/mea/en/news-and-trends/press/2026/october/Mastercard-Agent-Pay-for-Machines-in-action.html) | Mastercard · 2026-10 | 2 |
@@ -78,16 +81,13 @@
 | [Anthropic adopts OpenAI's standards: AGENTS.md](https://eu.36kr.com/en/p/3989811919076098) | 36Kr · 2026-09 | 2 |
 | [Deep Research 技术说明（o3 + 浏览 + Python 的长时单 agent）](https://openai.com/index/introducing-deep-research/) | OpenAI · 2025-02 | 2 |
 | [Foundry Agent Service is GA（Entra Agent Identity / 私有网络 / evaluations）](https://devblogs.microsoft.com/foundry/foundry-agent-service-ga/) | Microsoft Foundry Blog · 2026-03 | 2 |
-| [Gemini Enterprise Agent Platform Pricing（2026 SKU 合并）](https://services.google.com/fh/files/emails/b_502770571_gemini_enterprise_agent_platform_pricing.pdf) | Google · 2026-06 | 2 |
 | [Interrupts：暂停、`Command(resume=)` 与节点重跑语义](https://docs.langchain.com/oss/python/langgraph/interrupts) | LangChain · 2026-11 | 2 |
 | [Introducing AgentKit（含 2026-06-03 停用说明）](https://openai.com/index/introducing-agentkit/) | OpenAI · 2025-10 | 2 |
 | [LangGraph v1.2.24 / 仓库与变更日志](https://docs.langchain.com/oss/python/releases/changelog) | LangChain · 2026-11 | 2 |
 | [LangGraph 持久化与 checkpoint 语义](https://docs.langchain.com/oss/python/langgraph/checkpointers) | LangChain · 2026-11 | 2 |
-| [METR Time Horizon 1.1（50% 与 80% 任务时长）](https://opendatascience.com/ai-agent-task-horizon-workforce-planning/) | Open Data Science · 2026-10 | 2 |
 | [Microsoft Agent Framework 1.0 发布公告（2026-04-02 GA）](https://devblogs.microsoft.com/agent-framework/microsoft-agent-framework-version-1-0/) | Microsoft DevBlogs · 2026-04 | 2 |
 | [Microsoft Agent Framework Harness and Hosted Agents Reach General Availability](https://www.infoq.com/news/2026/08/agent-framework-harness-ga/) | InfoQ · 2026-08 | 2 |
 | [Microsoft Agent Framework 概览（含 Go 预览与 Harness Agent）](https://learn.microsoft.com/en-us/agent-framework/overview/) | Microsoft Learn · 2026-10-28 | 2 |
-| [Super-agent 设计探索：迈向更自主的 Agent 系统](https://finance.sina.com.cn/roll/2026-11-01/doc-inixeyiz3146996.shtml) | DeepSeek Harness 团队 · 2026-10-31 | 2 |
 | [The next evolution of the Agents SDK（2026-04-15：harness 与 sandbox 拆分、Sandbox agents beta）](https://openai.com/index/the-next-evolution-of-the-agents-sdk/) | OpenAI · 2026-04 | 2 |
 | [Agent Builder 文档（弃用通知、ChatKit 保留、导出 SDK 代码）](https://platform.openai.com/docs/guides/agent-builder) | OpenAI · 2026-11 | 1 |
 | [Agent Platform 价格（Deep Research token 与 grounding 计费）](https://cloud.google.com/model-garden/pricing?hl=zh-cn) | Google Cloud · 2026-11 | 1 |
@@ -117,6 +117,7 @@
 | [Evaluating（响应评估与检索评估指标）](https://developers.llamaindex.ai/python/framework/module_guides/evaluating/) | developers.llamaindex.ai · 2026-11 | 1 |
 | [Evolving Atlas into ChatGPT for browser-based agentic work（Atlas 于 2026-08-09 停用）](https://help.openai.com/en/articles/20001371-evolving-atlas-into-chatgpt-for-browser-based-agentic-work) | OpenAI Help Center · 2026-11 | 1 |
 | [Flows（`@start`/`@listen`/`@router`、state、持久化与 fork）](https://docs.crewai.com/v1.15.44/en/concepts/flows) | docs.crewai.com v1.15.44 · 2026-11 | 1 |
+| [Function calling 指南（工具选择即路由）](https://platform.openai.com/docs/guides/function-calling) | OpenAI · 2026 | 1 |
 | [Gartner Peer Community：agentic AI 平台策略讨论](https://www.gartner.com/peer-community/post/agentic-capabilities-emerge-across-sap-servicenow-oracle-salesforce-microsoft-enterprise-platforms-i-m-curious-how-organizations-78x9) | Gartner · 2026-08 | 1 |
 | [Gemini Enterprise Agent Platform name changes（Vertex AI 更名；Agent Engine → Agent Runtime）](https://docs.cloud.google.com/gemini-enterprise-agent-platform/vertex-ai-name-changes) | Google Cloud 文档 · 2026-11 | 1 |
 | [GitHub Copilot coding agent 文档](https://gh.io/coding-agent-docs) | GitHub · 2026-11 | 1 |
@@ -124,6 +125,7 @@
 | [Google shuts down Project Mariner（2026-05-04 关停）](https://www.theverge.com/tech/925559/google-project-mariner-shut-down) | The Verge · 2026-05 | 1 |
 | [Google's Computer Use Goes GA; Client Apps Still Execute the Actions](https://tech.yahoo.com/ai/gemini/articles/google-computer-goes-ga-client-155736236.html) | Yahoo Tech · 2026-10 | 1 |
 | [How to use ChatGPT Work now that ChatGPT agent is unavailable](https://dataconomy.com/2026/11/09/chatgpt-work-agent-alternative-multi-step-tasks/) | Dataconomy · 2026-11 | 1 |
+| [Introducing Contextual Retrieval（块级上下文与混合检索）](https://www.anthropic.com/news/contextual-retrieval) | Anthropic · 2024-09 | 1 |
 | [Introducing Gemini Enterprise Agent Platform](https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-agent-platform) | Google Cloud Blog · 2026-04 | 1 |
 | [Introducing deep research（2026-02-10 更新：MCP/应用与可信站点）](https://openai.com/ka-GE/index/introducing-deep-research/) | OpenAI · 2026-02 | 1 |
 | [LangGraph 1.0 发布与 `create_react_agent` 弃用说明](https://www.langchain.com/blog/langchain-langgraph-1dot) | LangChain · 2025-10 | 1 |
@@ -131,6 +133,7 @@
 | [LangSmith Agent Server：assistants/threads/runs 与任务队列](https://docs.langchain.com/langsmith/agent-server) | LangChain · 2026-11 | 1 |
 | [LangSmith Plans and Pricing（含 trace 额度与席位）](https://www.langchain.com/pricing) | LangChain · 2026 | 1 |
 | [LlamaIndex 文档索引与产品定位（框架为"最早的 Python 工具包"）](https://developers.llamaindex.ai/llms.txt) | developers.llamaindex.ai · 2026-11 | 1 |
+| [LlamaIndex 文档（索引、检索器、重排与查询引擎）](https://docs.llamaindex.ai/) | LlamaIndex · 2026 | 1 |
 | [MCP 集成指南](https://developers.llamaindex.ai/python/framework/module_guides/mcp/) | developers.llamaindex.ai · 2026-11 | 1 |
 | [MCP 集成（stdio / SSE / streamable-http）](https://docs.crewai.com/v1.15.44/en/mcp/overview) | docs.crewai.com v1.15.44 · 2026-11 | 1 |
 | [Mastra 文档（Agents、Workflows、Evals、Memory、部署）](https://mastra.ai/docs/agents/overview) | Mastra · 2026-11 | 1 |
@@ -162,12 +165,13 @@
 | [什么是 Microsoft Foundry？（原 Azure AI Foundry；提示代理 vs 托管代理、Responses API、Entra ID 与 RBAC）](https://learn.microsoft.com/zh-cn/azure/foundry/what-is-foundry) | Microsoft Learn · 2026-09 | 1 |
 | [可观测集成（Langfuse 等）](https://docs.crewai.com/v1.15.44/en/observability/langfuse) | docs.crewai.com v1.15.44 · 2026-11 | 1 |
 
-## 论文与研究（30 条）
+## 论文与研究（31 条）
 
 | 来源 | 机构 · 日期 | 引用篇数 |
 |---|---|---|
 | [Beyond the Leaderboard: A Synthesis of Tool-Use, Planning, and Reasoning Failures in LLM Agents](https://arxiv.org/abs/2607.05775) | Albayaydh et al. · 2026-07 | 3 |
 | [Indirect Prompt Injection in Browser-Using Agents](https://zenodo.org/records/21216301) | Zenodo · 2026-07 | 2 |
+| [Lost in the Middle: How Language Models Use Long Contexts](https://doi.org/10.1162/tacl_a_00638) | Liu et al. · 2024（TACL） | 2 |
 | [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) | Yao et al. · 2022-10 | 2 |
 | [WebArena Verified（ICLR 2026）](https://openreview.net/pdf?id=94tlGxmqkN) | ServiceNow · 2026 | 2 |
 | [Why Do Multi-Agent LLM Systems Fail?](https://arxiv.org/abs/2503.13657) | Cemri et al. · 2025-03（v3 2025-10） | 2 |
@@ -180,13 +184,13 @@
 | [EchoLeak: The First Real-World Zero-Click Prompt Injection Exploit in a Production LLM System](https://arxiv.org/abs/2509.10540) | arXiv 2509.10540 · 2025-09 | 1 |
 | [From Storage to Experience: A Survey on LLM Agent Memory Mechanisms](https://export.arxiv.org/pdf/2605.06716) | arXiv · 2026-05 | 1 |
 | [GAIA: a benchmark for General AI Assistants](https://arxiv.org/abs/2311.12983) | Meta AI 等 · 2023-11 | 1 |
-| [Lost in the Middle: How Language Models Use Long Contexts](https://doi.org/10.1162/tacl_a_00638) | Liu et al. · 2024（TACL） | 1 |
 | [Measurement Without Validity: The Compounding Reliability Problem in Agentic AI Evaluation](https://arxiv.org/abs/2608.00794v5) | arXiv · 2026-10 | 1 |
 | [Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory](https://arxiv.org/abs/2504.19413) | Chhikara et al. · 2025-04 | 1 |
 | [MemGPT: Towards LLMs as Operating Systems](https://arxiv.org/abs/2310.08560) | Packer et al. · 2023-10 | 1 |
 | [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](https://arxiv.org/abs/2404.07972) | arXiv 论文 · 2024-04 | 1 |
 | [Plan-and-Solve Prompting](https://arxiv.org/abs/2305.04091) | Wang et al. · 2023-05 | 1 |
 | [Reflexion: Language Agents with Verbal Reinforcement Learning](https://arxiv.org/abs/2303.11366) | Shinn et al. · 2023-03（NeurIPS 2023） | 1 |
+| [Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401) | Lewis et al. · 2020 | 1 |
 | [Sleep-time Compute: Beyond Inference Scaling at Test-time](https://arxiv.org/abs/2504.13171) | Lin et al. · 2025-04 | 1 |
 | [Toolformer: Language Models Can Teach Themselves to Use Tools](https://arxiv.org/abs/2302.04761) | Meta AI · 2023-02 | 1 |
 | [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/abs/2305.10601) | Yao et al. · 2023-05（NeurIPS 2023） | 1 |
@@ -201,11 +205,11 @@
 
 | 来源 | 机构 · 日期 | 引用篇数 |
 |---|---|---|
-| [Why we no longer evaluate SWE-bench Verified（污染与测试缺陷分析，建议转向 SWE-bench Pro）](https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/) | OpenAI · 2026-02-23 | 3 |
+| [Why we no longer evaluate SWE-bench Verified](https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/) | OpenAI · 2026-02 | 4 |
+| [OSWorld Benchmark Leaderboard（头部 79.6 / 中位 53.4）](https://benchgecko.ai/benchmark/osworld) | BenchGecko · 2026-11 | 2 |
 | [terminal-bench@2.0 Leaderboard（89 任务、verifier 判定）](https://www.tbench.ai/leaderboard/terminal-bench/2.0) | Terminal-Bench / Laude Institute · 2026-11 | 2 |
 | [DeepResearch Bench II (Mercor) Leaderboard](https://benchlm.ai/benchmarks/mercordeepresearchbench2) | BenchLM · 2026-11 | 1 |
 | [LLM Pricing 2026: Every Model, $0.11–$50 per 1M Tokens（2026-11 价格区间概览）](https://benchlm.ai/blog/posts/llm-pricing-2026) | BenchLM · 2026-11 | 1 |
-| [OSWorld Benchmark Leaderboard（头部 79.6 / 中位 53.4）](https://benchgecko.ai/benchmark/osworld) | BenchGecko · 2026-11 | 1 |
 | [OSWorld-Verified 与 OSWorld 2.0 的口径差异](https://benchlm.ai/benchmarks/osworld-verified) | BenchLM · 2026-11 | 1 |
 | [OpenAI retracts SWE-bench Pro recommendation after finding 30 percent of tasks broken](https://4sysops.com/archives/openai-retracts-swe-bench-pro-recommendation-after-finding-30-percent-of-tasks-broken/) | 4sysops · 2026-07 | 1 |
 | [SWE-Bench Pro: Raising the Bar for Agentic Coding（1,865 题 / 41 仓库）](https://scale.com/blog/swe-bench-pro) | Scale AI · 2025-09 | 1 |
@@ -219,6 +223,7 @@
 |---|---|---|
 | [ADK 2.0 README（Workflow Runtime、Task API、部署目标）](https://github.com/google/adk-python) | Google · 2026-11 | 2 |
 | [Claude Agent SDK Python README（query/权限/内置 CLI）](https://github.com/anthropics/claude-agent-sdk-python) | Anthropic · 2026-11 | 2 |
+| [LongMemEval 跨会话口径实测（第三方自测）](https://pypi.org/project/memtether/0.1.0a14/) | memtether · 2026-09 | 2 |
 | [OpenAI Agents SDK v0.25.0 发布说明](https://github.com/openai/openai-agents-python/releases/tag/v0.25.0) | GitHub · 2026-11-17 | 2 |
 | [@anthropic-ai/claude-agent-sdk 0.3.329](https://www.npmjs.com/package/@anthropic-ai/claude-agent-sdk) | npm · 2026-11-19 | 1 |
 | [Agno PyPI 元数据（3.2.1 / 2026-11-17 / Python ≥3.9 / Apache-2.0）](https://pypi.org/project/agno/) | PyPI · 2026-11-20 核实 | 1 |
@@ -230,7 +235,6 @@
 | [Durable execution（非确定性操作与副作用必须包在 task/节点内的约束）](https://github.com/langchain-ai/docs/blob/main/src/oss/langgraph/durable-execution.mdx) | LangChain 文档 · 2026 | 1 |
 | [Gemini CLI 配置说明](https://github.com/google-gemini/gemini-cli/blob/main/docs/get-started/configuration.md) | Google · 2026-11 | 1 |
 | [Is OpenAI Operator still available（Operator / ChatGPT agent / Atlas 时间线）](https://github.com/feder-cr/invisible_playwright_mcp/blob/v0.68.10/docs/is-openai-operator-still-available.md) | 第三方追踪文档 · 2026-09 | 1 |
-| [LongMemEval 跨会话口径实测（第三方自测）](https://pypi.org/project/memtether/0.1.0a14/) | memtether · 2026-09 | 1 |
 | [Mastra LICENSE.md（Apache-2.0 + `ee/` 目录单独授权）](https://github.com/mastra-ai/mastra/blob/main/LICENSE.md) | GitHub · 2026-11 | 1 |
 | [Open Deep Research（可配置 planner / search / depth）](https://pypi.org/project/open-deep-research/0.0.2/) | LangChain · 2026-08 | 1 |
 | [Open-source AI browser agents（browser-use 规模与许可）](https://github.com/feder-cr/jobs_applier_ai_agent_aihawk/blob/83b15708e463f614bda6c0838d86fcb399dc93d5/docs/ai-browser-agent-open-source.md) | 第三方调研 · 2026-09 | 1 |
@@ -265,13 +269,13 @@
 | [smolagents PyPI 元数据（1.26.0 / 2026-05-29 / Python ≥3.10）](https://pypi.org/project/smolagents/) | PyPI · 2026-11-20 核实 | 1 |
 | [smolagents README（CodeAgent 与 ToolCallingAgent、约 1000 行、30% 更少步数、沙箱选项与 LocalPythonExecutor 警告）](https://github.com/huggingface/smolagents) | Hugging Face · 2026-05 | 1 |
 
-## 其他（89 条）
+## 其他（90 条）
 
 | 来源 | 机构 · 日期 | 引用篇数 |
 |---|---|---|
+| [Context Rot: How Increasing Input Tokens Impacts LLM Performance](https://www.trychroma.com/research/context-rot) | Chroma · 2025-07 | 3 |
 | [Extend Claude Code（扩展层：CLAUDE.md / Skills / Subagents / Hooks / MCP）](https://code.claude.com/docs/en/features-overview) | Claude Code Docs · 2026-11 | 3 |
 | [Agent security considerations for WebMCP](https://developer.chrome.com/docs/agents/security) | Chrome for Developers · 2026-06 | 2 |
-| [Context Rot: How Increasing Input Tokens Impacts LLM Performance](https://www.trychroma.com/research/context-rot) | Chroma · 2025-07 | 2 |
 | [Don't Build Multi-Agents](https://cognition.ai/blog/dont-build-multi-agents) | Cognition · 2025-06 | 2 |
 | [OpenAI Agents SDK 文档首页（原语、Sandbox agents、Sessions）](https://openai.github.io/openai-agents-python/) | OpenAI · 2026-11 | 2 |
 | [Tool search tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/tool-search-tool) | Anthropic · 2026 | 2 |
@@ -352,6 +356,7 @@
 | [The Agent Trust Profile: Verifiable Authority for Autonomous Agents](https://www.ietf.org/archive/id/draft-mnki-agent-trust-profile-00.html) | IETF · 2026-09 | 1 |
 | [The Governance Audit Record (GAR) for Agentic AI Systems](https://datatracker.ietf.org/doc/html/draft-sato-soos-gar-00) | IETF · 2026 | 1 |
 | [The LeadDev AI Code Review Report 2026](https://leaddev.com/technical-direction/how-do-you-trust-ai-code-you-didnt-read) | LeadDev · 2026-11 | 1 |
+| [Tool use 概览（模型如何在候选工具中选择）](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview) | Anthropic · 2026 | 1 |
 | [Top 13 Open-Source Agentic AI Frameworks（框架横评）](https://aimultiple.com/agentic-frameworks) | AIMultiple · 2026-11 | 1 |
 | [What a million tokens costs across frontier models, 18 Oct 2026（厂商页面抓取的单价区间）](https://safeguard.sh/resources/blog/what-a-million-tokens-costs-across-frontier-models) | Safeguard · 2026-10 | 1 |
 | [What is gVisor?](https://gvisor.dev/docs/) | gVisor Project（CNCF） · 2026 | 1 |

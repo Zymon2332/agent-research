@@ -1,6 +1,6 @@
 # 主流 Agent 技术体系（2026-11 基线）
 
-面向技术选型与架构评审的结构化文档集：**38 篇，一篇一主题**，按"总览 → 基础 → 框架 → 协议 → 工程化 → 产品 → 展望"分层组织。每篇自带结论、对比表、踩坑与来源，可独立阅读。
+面向技术选型与架构评审的结构化文档集：**41 篇，一篇一主题**，按"总览 → 基础 → 框架 → 协议 → 工程化 → 产品 → 展望"分层组织。每篇自带结论、对比表、踩坑与来源，可独立阅读。
 
 - 时间基线：**2026-11-20**。所有版本号与规范状态标注核实日期，生态变化快，引用前请先看篇内的"基线"。
 - 写作规范：[STYLE.md](STYLE.md)；目录契约：[OUTLINE.md](OUTLINE.md)。
@@ -24,6 +24,7 @@
 | [01-landscape](00-overview/01-landscape.md) | 2026 技术全景与七层模型 | 已完稿 |
 | [02-evolution](00-overview/02-evolution.md) | 四代演进与关键时间线 | 已完稿 |
 | [03-glossary](00-overview/03-glossary.md) | 术语表与易混词辨析 | 已完稿 |
+| [04-capability-outlook](00-overview/04-capability-outlook.md) | 能力刻度、痛点矩阵与未来情景 | 已完稿 |
 
 ### 卷 1 · 基础理论与范式
 
@@ -35,6 +36,8 @@
 | [04-tool-use-and-sandbox](01-foundations/04-tool-use-and-sandbox.md) | 工具 schema 与沙箱执行 | 已完稿 |
 | [05-multi-agent](01-foundations/05-multi-agent.md) | 多智能体拓扑与失败模式 | 已完稿 |
 | [06-agent-architectures](01-foundations/06-agent-architectures.md) | 六种架构方案与 Super-Agent 解剖 | 已完稿 |
+| [07-intent-recognition](01-foundations/07-intent-recognition.md) | 意图层级、路由决策与拒识 | 已完稿 |
+| [08-retrieval-and-rag](01-foundations/08-retrieval-and-rag.md) | 检索流水线、agentic RAG 与评测 | 已完稿 |
 
 ### 卷 2 · 主流框架
 
@@ -103,3 +106,5 @@
 - 2026-11-20：初始化目录、规范与模板，开始按批次写作。
 - 2026-11-20：36 篇全部完稿，共约 7,700 行；汇总去重来源 300 条，跨篇审校完成。
 - 2026-11-23：补《Agent 架构方案》与《大厂 Agent 参考架构》两篇，共 38 篇。
+- 2026-11-23：补《能力、痛点与未来》，共 39 篇。
+- 2026-11-24：补《意图识别》与《检索与 RAG》，共 41 篇。

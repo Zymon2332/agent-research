@@ -31,8 +31,9 @@ agent-research/
 │
 ├── 00-overview/                       # 卷 0：总览（先读）
 │   ├── 01-landscape.md                # 2026 Agent 技术全景与分层模型
-│   ├── 02-evolution.md                # 三代演进脉络与关键时间线
-│   └── 03-glossary.md                 # 术语表（中英对照，40–60 条）
+│   ├── 02-evolution.md                # 四代演进脉络与关键时间线
+│   ├── 03-glossary.md                 # 术语表（中英对照，40–60 条）
+│   └── 04-capability-outlook.md       # 能力、痛点与未来
 │
 ├── 01-foundations/                    # 卷 1：基础理论与范式
 │   ├── 01-agent-loop.md               # Agent 的本质：感知-思考-行动循环
@@ -40,7 +41,9 @@ agent-research/
 │   ├── 03-memory.md                   # 记忆体系
 │   ├── 04-tool-use-and-sandbox.md     # 工具调用与沙箱执行
 │   ├── 05-multi-agent.md              # 多智能体协作
-│   └── 06-agent-architectures.md      # 六种架构方案与 Super-Agent
+│   ├── 06-agent-architectures.md      # 六种架构方案与 Super-Agent
+│   ├── 07-intent-recognition.md       # 意图识别与路由决策
+│   └── 08-retrieval-and-rag.md        # 检索流水线与 agentic RAG
 │
 ├── 02-frameworks/                     # 卷 2：主流框架（一篇一框架）
 │   ├── 00-selection-matrix.md         # 选型矩阵与决策树
@@ -106,6 +109,11 @@ agent-research/
 - 40–60 条中英对照：agent、agentic、harness、scaffold、agent loop、ReAct、tool call、trajectory、context rot、compaction、memory、handoff、supervisor、subagent、guardrail、HITL、durable execution、sandbox、Agent Card、MCP/A2A/ACP、elicitation、sampling、extension、eval、LLM-as-judge 等。
 - 易混词辨析：Agent vs Workflow、Framework vs SDK vs Runtime、Protocol vs API、Orchestration vs Choreography。
 
+**00/04-capability-outlook.md｜能力、痛点与未来**
+- 能力刻度：任务长度 / 工具面 / 交互形态 / 自主度 / 成本口径 / 可审计性。
+- 痛点矩阵：十个痛点的根因、缓解与仍缺什么。
+- 三档情景：大概率、有可能、不太可能，各带反证条件。
+
 ### 卷 1 · 基础理论与范式（与框架无关的"不变式"）
 
 **01/01-agent-loop.md｜Agent 的本质**
@@ -146,6 +154,17 @@ agent-research/
 - 五面解剖：控制 / 执行 / 记忆 / 治理 / 观测。
 - 六种方案：单体、路由、主管、层级、群体、流水线；三种判据。
 - Super-Agent：Router/Worker 双层、事件驱动、上下文隔离、与 supervisor 的区别、失败模式。
+
+**01/07-intent-recognition.md｜意图识别**
+- 意图三层：域 / 任务 / 槽位；taxonomy 四条硬规则。
+- 九类语言/会话/业务问题：指代、省略、歧义、否定、话题切换、多意图、言外之意、越权、域外。
+- 四种实现与双阈值拒识；多意图、上下文依赖、与 handoff 的区别。
+- 评测看加权错分与路由后成功率，不看总体准确率。
+
+**01/08-retrieval-and-rag.md｜检索与 RAG**
+- 流水线六段与分环节度量；分块、混合检索、重排、查询改写。
+- agentic RAG 的再检索与停止条件；引用校验与拒答。
+- 何时不该用 RAG；七个常见坑。
 
 ### 卷 2 · 主流框架（一篇一框架，统一 10 维对比）
 
@@ -353,8 +372,8 @@ sources: n
 | 档位 | 篇数 | 体量 | 说明 |
 |---|---|---|---|
 | A 精简 | ~18 | 3–4 万字 | 框架合并为 4 篇、工程化合并为 3 篇，只讲结论与对比 |
-| B 标准（推荐） | 38 | 8–10 万字 | 上述结构，每篇 150–300 行，框架一篇一框架 |
-| C 深度 | 38+ | 12 万字+ | 在 B 基础上加可运行代码示例、benchmark 复现记录、更多一手来源 |
+| B 标准（推荐） | 41 | 8–10 万字 | 上述结构，每篇 150–300 行，框架一篇一框架 |
+| C 深度 | 41+ | 12 万字+ | 在 B 基础上加可运行代码示例、benchmark 复现记录、更多一手来源 |
 
 **交付批次**（每批完成后可 review，不阻塞后续）：
 1. P0 骨架：README 骨架 + 模板 + 空目录 + 本大纲定稿
